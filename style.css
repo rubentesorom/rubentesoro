@@ -1,0 +1,33 @@
+.hero-media {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.hero-media img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Hero section */
+.hero-media {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  align-items: center;     /* centers content vertically if needed */
+  margin: 2rem 0;
+  overflow: hidden;        /* prevents overflow if GIF is too wide */
+}
+
+.hero-media img {
+  width: 100%;        /* full width */
+  max-width: 1200px;  /* optional max width */
+  height: auto;       /* keeps aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* subtle shadow for pop */
+  transition: transform 0.3s ease; /* smooth hover effect */
+}
+
+.hero-media img:hover {
+  transform: scale(1.05); /* slight zoom on hover */
+}
